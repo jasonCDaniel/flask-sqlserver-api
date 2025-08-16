@@ -25,10 +25,10 @@ This project is a **Flask-based REST API** designed to execute business workflow
 - `GET /workflows` → Retrieve list of workflows.
 - `POST /workflow/start` → Start a workflow job.
 - `GET /workflow/<workflow_id>/step/<step_id>` → Get step details.
-- `GET /workflow/<workflow_id>/step/<step_id>/dropdown` → Get dropdown list data.
-- `POST /workflow/<workflow_id>/step/<step_id>/actions` → Execute actions procedure.
-- `POST /workflow/<workflow_id>/step/<step_id>/conditions` → Execute conditions procedure.
-- `POST /workflow/step/log` → Log workflow step details.
+- `GET /workflow/<workflow_id>/step/<step_id>/dropdown` → Get dropdown list data for front-end display.
+- `POST /workflow/<workflow_id>/step/<step_id>/actions` → Execute actions procedure - scripted to execute any actions which might hinge on the workflow step.
+- `POST /workflow/<workflow_id>/step/<step_id>/conditions` → Execute conditions procedure - divert to different workflow steps based on user-input.
+- `POST /workflow/step/log` → Log workflow step details for traceability and debugging.
 
 ---
 
