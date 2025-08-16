@@ -266,7 +266,7 @@ def log_job_step():
 
 
 
-### Endpoint for testing connection
+# Endpoint for testing connection
 @app.route('/test', methods=['GET'])
 def test_connection():
     try:
@@ -278,8 +278,9 @@ def test_connection():
 
 
 
-### Main
+# Main
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5090, debug=True)
+
 
 
