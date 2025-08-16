@@ -4,6 +4,7 @@ import pyodbc
 
 app = Flask(__name__)
 
+# Update the address below to address where you are hosting front-end application.
 CORS(app, resources={r"/*": {"origins": "http://0.0.0.0:5095"}})
 
 # Database connection function
@@ -281,6 +282,7 @@ def test_connection():
 # Main
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5090, debug=True)
+
 
 
 
